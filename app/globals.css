@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f5f5f3;
+  --text: #0a0a0a;
+  --text-muted: #6b6b6b;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-strong: rgba(0, 0, 0, 0.25);
+  --font-serif: "Cormorant", serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --bg-secondary: #141414;
+  --text: #f0f0f0;
+  --text-muted: #888888;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+/* Section label style */
+.sec-label {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.sec-label::after {
+  content: "";
+  flex: 1;
+  height: 0.5px;
+  background: var(--border);
+}
+
+/* Pill tag style */
+.tag {
+  font-size: 13px;
+  color: var(--text-muted);
+  border: 0.5px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+/* Pulsing dot */
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text);
+  animation: pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/* ── Responsive ─────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-hamburger {
+    display: flex !important;
+  }
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Experience */
+  .exp-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+  }
+  .footer-meta {
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+  }
+}
