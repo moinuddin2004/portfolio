@@ -95,6 +95,23 @@ body {
   }
 }
 
+/* ── Profile Picture ────────────────────────────── */
+.profile-pic {
+  filter: grayscale(100%) !important;
+  transition: filter 0.4s ease, transform 0.4s ease !important;
+}
+.profile-pic-wrapper {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+  cursor: pointer;
+}
+.profile-pic-wrapper:hover .profile-pic {
+  filter: grayscale(0%) !important;
+  transform: scale(1.05) !important;
+}
+
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 768px) {
   /* Navbar */

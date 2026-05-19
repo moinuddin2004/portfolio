@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { content } from "@/data/content";
 
 const fadeUp = {
@@ -38,19 +39,34 @@ export default function Hero() {
           initial="initial"
           animate="animate"
         >
-          {/* Eyebrow */}
+          {/* Eyebrow with Profile Photo */}
           <motion.div
             variants={fadeUp}
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 12,
+              gap: 14,
               marginBottom: "1.5rem",
             }}
           >
+            {/* Circular Profile Photo */}
+            <div className="profile-pic-wrapper ring-2 ring-[var(--border-strong)] ring-offset-4 ring-offset-[var(--bg)] rounded-full">
+              <Image
+                src="/mypic.jpeg"
+                alt={content.name}
+                width={80}
+                height={80}
+                className="profile-pic rounded-full"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                }}
+              />
+            </div>
             <div
               style={{
-                width: 20,
+                width: 10,
                 height: "0.5px",
                 background: "var(--text-muted)",
                 flexShrink: 0,
