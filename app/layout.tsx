@@ -21,6 +21,22 @@ export const metadata: Metadata = {
   title: "Syed Moin Uddin — Software Engineer",
   description:
     "Backend-focused software engineer who designs distributed systems, solves hard architectural problems, and builds products real users rely on.",
+  openGraph: {
+    title: "Syed Moin Uddin — Software Engineer",
+    description:
+      "Backend-focused software engineer who designs distributed systems, solves hard architectural problems, and builds products real users rely on.",
+    siteName: "Syed Moin Uddin",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Syed Moin Uddin — Software Engineer",
+    description:
+      "Backend-focused software engineer who designs distributed systems, solves hard architectural problems, and builds products real users rely on.",
+    creator: "@moinuddin177535",
+  },
+  metadataBase: new URL("https://moinuddin.info"),
 };
 
 export default function RootLayout({

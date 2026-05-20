@@ -19,7 +19,7 @@ export const content = {
       period: "March 2026 – Present",
       location: "Karachi, Pakistan",
       description:
-        "Building distributed backend systems for a WhatsApp Campaign Management platform serving major banking clients. Focus on scalability, Redisbacked queuing pipelines, and highthroughput architecture under real production load.",
+        "Building distributed backend systems for a WhatsApp Campaign Management platform serving major banking clients. Focus on scalability, Redis backed queuing pipelines, and highthroughput architecture under real production load.",
       tags: ["Java", "Spring Boot", "NestJS", "Next.js", "Redis", "RabbitMQ", "MySQL"],
     },
     {
@@ -28,7 +28,7 @@ export const content = {
       period: "Nov 2024 — Feb 2026",
       location: "Remote",
       description:
-        "Built two SaaS products — a multitenant Gym Management System and a Learning Management System. Complex business logic, multirole auth, and real client workflows from day one.",
+        "Built two SaaS products a multitenant Gym Management System and a Learning Management System. Complex business logic, multirole auth, and real client workflows from day one.",
       tags: ["Java", "Spring Boot", "NestJS", "TypeScript", "React", "React Native", "PostgreSQL", "MySQL"],
     },
   ],
@@ -59,7 +59,7 @@ export const content = {
       url: null,
       github: "https://github.com/moinuddin2004",
       description:
-        "Clinic management SaaS that fully automates the operational flow of healthcare clinics. The system adapts its feature set to each clinic type — a dental clinic gets a different experience than a general practice.",
+        "Clinic management SaaS that fully automates the operational flow of healthcare clinics. The system adapts its feature set to each clinic type a dental clinic gets a different experience than a general practice.",
       highlight: "One platform. Infinite clinic types.",
       stack: ["NestJS", "Next.js", "PostgreSQL", "TypeORM", "Docker"],
     },
@@ -110,9 +110,9 @@ export const content = {
     ],
     headingItalic: [false, false, true, true],
     body: [
-      "Before university, I had never owned a computer. My father is a dentist — that was the plan for me too. Life redirected me, and I chose Computer Science.",
-      "The first line of code I ever wrote was in a university lab on my very first day at SSUET. I didn't wait long after that. From the first semester, I made a decision: take the degree seriously, and build skills in parallel — not later, not after graduation.",
-      "What makes me different is not just the stack I know — it's how I think. I don't just read requirements. I read the problem behind the requirements.",
+      "Before university, I had never owned a computer. My father is a dentist that was the plan for me too. Life redirected me, and I chose Computer Science.",
+      "The first line of code I ever wrote was in a university lab on my very first day at SSUET. I didn't wait long after that. From the first semester, I made a decision: take the degree seriously, and build skills in parallel not later, not after graduation.",
+      "What makes me different is not just the stack I know it's how I think. I don't just read requirements. I read the problem behind the requirements.",
     ],
     quote: "I think like the user first, then like the architect.",
     credentials: [
@@ -125,18 +125,18 @@ export const content = {
   contact: {
     heading: "Open to serious conversations.",
     subtext:
-      "Whether you're building something complex, hiring for a backend role, or want to exchange ideas — my inbox is open.",
+      "Whether you're building something complex, hiring for a backend role, or want to exchange ideas my inbox is open.",
     links: [
       {
         label: "s.m.moin2004@gmail.com",
         icon: "mail",
         href: "mailto:s.m.moin2004@gmail.com",
       },
-      {
-        label: "+92 333 350 8327",
-        icon: "phone",
-        href: "tel:+923333508327",
-      },
+      // {
+      //   label: "+92 333 350 8327",
+      //   icon: "phone",
+      //   href: "tel:+923333508327",
+      // },
       {
         label: "linkedin.com/in/syed-moinuddin",
         icon: "linkedin",
